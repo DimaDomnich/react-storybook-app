@@ -10,4 +10,5 @@ const Template = (args) => <Rating {...args} />;
 export const FiveStars = Template.bind({});
 FiveStars.args = {
   number: 5,
+  size: 20,
 };
