@@ -15,7 +15,7 @@ const Star = ({ selected, onSelect = (f) => f, size }) => (
 const Rating = ({ number = 5, size = 16 }) => {
   const [selected, setSelected] = useState(-1);
 
-  return [...Array(number)].map((n, i) => (
+  return [...Array(number)].map((_, i) => (
     <Star size={size} key={i} onSelect={() => setSelected(i + 1)} selected={i < selected} />
   ));
 };
